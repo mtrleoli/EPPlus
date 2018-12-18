@@ -375,7 +375,7 @@ namespace OfficeOpenXml.VBA
                 }
             }
             var buffer = (bw.BaseStream as MemoryStream).ToArray();
-            var hp = System.Security.Cryptography.MD5.Create();
+            var hp = System.Security.Cryptography.SHA256.Create();
             return hp.ComputeHash(buffer);
         }
         /// <summary>

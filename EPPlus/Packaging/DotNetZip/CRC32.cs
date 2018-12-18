@@ -93,8 +93,8 @@ namespace OfficeOpenXml.Packaging.Ionic.Crc
             if (input == null)
                 throw new Exception("The input stream must not be null.");
 
-            unchecked
-            {
+            //unchecked
+            //{
                 byte[] buffer = new byte[BUFFER_SIZE];
                 int readSize = BUFFER_SIZE;
 
@@ -111,7 +111,7 @@ namespace OfficeOpenXml.Packaging.Ionic.Crc
                 }
 
                 return (Int32)(~_register);
-            }
+            //}
         }
 
 

@@ -274,10 +274,6 @@ namespace OfficeOpenXml.Encryption
                 case eHashAlogorithm.RIPEMD160:
                     return new HMACRIPEMD160(salt);
 #endif                
-                case eHashAlogorithm.MD5:
-                    return new HMACMD5(salt);              
-                case eHashAlogorithm.SHA1:
-                    return new HMACSHA1(salt);
                 case eHashAlogorithm.SHA256:
                     return new HMACSHA256(salt);
                 case eHashAlogorithm.SHA384:
@@ -651,12 +647,8 @@ namespace OfficeOpenXml.Encryption
         {
             switch (encr.HashAlgorithm)
             {
-                case eHashAlogorithm.MD5:
-                        return new MD5CryptoServiceProvider();
                 case eHashAlogorithm.RIPEMD160:
                         return new RIPEMD160Managed();
-                case eHashAlogorithm.SHA1:
-                        return new SHA1CryptoServiceProvider();
                 case eHashAlogorithm.SHA256:
                         return  new SHA256CryptoServiceProvider();
                 case eHashAlogorithm.SHA384:

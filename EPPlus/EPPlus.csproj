@@ -25,7 +25,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -41,7 +41,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,7 +62,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Library\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -225,6 +226,10 @@
     <Compile Include="ConditionalFormatting\Rules\ExcelConditionalFormattingUniqueValues.cs" />
     <Compile Include="ConditionalFormatting\Rules\ExcelConditionalFormattingYesterday.cs" />
     <Compile Include="Drawing\Chart\ExcelChartDataTable.cs" />
+    <Compile Include="Encryption\EncryptionHandler.cs" />
+    <Compile Include="Encryption\EncryptionHeader.cs" />
+    <Compile Include="Encryption\EncryptionInfo.cs" />
+    <Compile Include="Encryption\EncryptionVerifier.cs" />
     <Compile Include="FontSize.cs" />
     <Compile Include="DataValidation\Contracts\IExcelDataValidation.cs" />
     <Compile Include="DataValidation\Contracts\IExcelDataValidationAny.cs" />
@@ -286,10 +291,6 @@
     <Compile Include="Drawing\Vml\ExcelVmlDrawingCommentCollection.cs" />
     <Compile Include="Drawing\Vml\ExcelVmlDrawingPicture.cs" />
     <Compile Include="Drawing\Vml\ExcelVmlDrawingBase.cs" />
-    <Compile Include="Encryption\EncryptionHandler.cs" />
-    <Compile Include="Encryption\EncryptionHeader.cs" />
-    <Compile Include="Encryption\EncryptionInfo.cs" />
-    <Compile Include="Encryption\EncryptionVerifier.cs" />
     <Compile Include="ExcelBackgroundImage.cs" />
     <Compile Include="DataValidation\ExcelDataValidation.cs" />
     <Compile Include="DataValidation\ExcelDataValidationCollection.cs" />
@@ -680,7 +681,6 @@
     <Compile Include="Packaging\DotNetZip\ZipFile.Extract.cs" />
     <Compile Include="Packaging\DotNetZip\ZipFile.Read.cs" />
     <Compile Include="Packaging\DotNetZip\ZipFile.Save.cs" />
-    <Compile Include="Packaging\DotNetZip\ZipFile.SaveSelfExtractor.cs" />
     <Compile Include="Packaging\DotNetZip\ZipFile.Selector.cs" />
     <Compile Include="Packaging\DotNetZip\ZipFile.x-IEnumerable.cs" />
     <Compile Include="Packaging\DotNetZip\ZipInputStream.cs">
