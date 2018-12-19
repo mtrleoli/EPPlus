@@ -66,12 +66,12 @@ using System.Security;
     //[assembly: AssemblyFileVersion("4.5.0.0")]
 #endif
 [assembly: AllowPartiallyTrustedCallers]
-[assembly: AssemblyTitle("1.0.1")]
-[assembly: AssemblyDescription("EPPlusPlus")]
+[assembly: AssemblyTitle("1.0.0")]
+[assembly: AssemblyDescription("EPPlus.Custom")]
 [assembly: AssemblyCompany("ABC")]
-[assembly: AssemblyVersion("1.0.0.1")]
-[assembly: AssemblyFileVersion("1.0.0.1")]
-[assembly: AssemblyProduct("EPPlusPlus")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyProduct("EPPlus.Custom")]
 [assembly: AssemblyCopyright("ABC")]
 [assembly: AssemblyTrademark("ABC")]
 
