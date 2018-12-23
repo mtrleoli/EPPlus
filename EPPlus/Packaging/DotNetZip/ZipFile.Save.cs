@@ -350,8 +350,10 @@ namespace OfficeOpenXml.Packaging.Ionic.Zip
             }
             catch (IOException ex1)
             {
+				/*
                 if (Verbose)
                     StatusMessageTextWriter.WriteLine("ZipFile::Save: could not delete temp file: {0}.", string.IsNullOrEmpty(ex1.Message) ? string.Empty : ex1.Message);
+				*/
             }
         }
 

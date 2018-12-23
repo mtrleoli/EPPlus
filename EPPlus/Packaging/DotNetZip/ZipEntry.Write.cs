@@ -2206,7 +2206,7 @@ namespace OfficeOpenXml.Packaging.Ionic.Zip
                             }
                             if (ZipErrorAction == ZipErrorAction.Skip)
                             {
-                                WriteStatus("Skipping file {0} (exception: {1})", LocalFileName, exc1.ToString());
+                                //WriteStatus("Skipping file {0} (exception: {1})", LocalFileName, exc1.ToString());
 
                                 _skippedDuringSave = true;
                                 done = true;
