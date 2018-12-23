@@ -95,7 +95,7 @@ namespace OfficeOpenXml.Packaging.Ionic.Crc
 
             //unchecked
             //{
-				/*
+                /*
                 byte[] buffer = new byte[BUFFER_SIZE];
                 int readSize = BUFFER_SIZE;
 				
@@ -110,7 +110,7 @@ namespace OfficeOpenXml.Packaging.Ionic.Crc
                     if (output != null) output.Write(buffer, 0, count);
                     _TotalBytesRead += count;
                 }
-				*/
+                */
                 return (Int32)(~_register);
             //}
         }

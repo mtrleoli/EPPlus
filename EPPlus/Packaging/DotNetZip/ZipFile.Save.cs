@@ -353,9 +353,9 @@ namespace OfficeOpenXml.Packaging.Ionic.Zip
 				/*
                 if (Verbose)
                     StatusMessageTextWriter.WriteLine("ZipFile::Save: could not delete temp file: {0}.", string.IsNullOrEmpty(ex1.Message) ? string.Empty : ex1.Message);
-				*/
-            }
-        }
+                */
+			}
+		}
 
 
         private void CleanupAfterSaveOperation()
